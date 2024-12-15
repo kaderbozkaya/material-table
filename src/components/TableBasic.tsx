@@ -29,9 +29,9 @@ function TableBasic() {
     <MaterialReactTable
       columns={columns}
       data={PersonalData}
-      enableRowSelection={true}
-      enableColumnOrdering={false}
-      enableGlobalFilter={false}
+      enableRowSelection={true} 
+      enableColumnOrdering={false} //change to true if we want to relocate columns
+      enableGlobalFilter={true} //to be able to search(true)
       initialState={{
         pagination: {
           pageSize: 7,
